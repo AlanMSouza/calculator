@@ -1,14 +1,17 @@
-const botao = document.querySelectorAll(".botao");
-const telaAtual = document.querySelector(".tela")
+function insere(num) {
+    var numero = document.querySelector(".tela").innerHTML;
+    document.querySelector(".tela").innerHTML = numero + num;
+}
 
-botao.forEach((elemento) => {
-    elemento.addEventListener("click", (evento) => {
-        botaoOperador(evento.target.textContent);
-    })
+const limpaTela = document.querySelector(".tela")
+const limpar = document.querySelector("[data-limpar]");
+limpar.addEventListener("click", () => {
+    limpaTela.innerHTML = "";
 })
 
-function botaoOperador(operador) {
-    if(operador === "-") {
-        telaAtual.textContent = parseInt(telaAtual.textContent) + 3;
+function calcular() {
+    var resultado = document.querySelector(".tela").innerHTML;
+    if(resultado) {
+        document.querySelector(".tela").innerHTML = eval(resultado);
     }
 }

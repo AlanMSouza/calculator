@@ -9,42 +9,35 @@
 <body>
     <div class="conteudo">
         <div class="tela">
-            0
+            
         </div>
         <div class="calculadora-botoes">
             <div class="calculadora-botao">
-                <button class="botao">1</button>
-                <button class="botao">2</button>
-                <button class="botao">3</button>
-                <button class="botao">&plus;</button>
+                <button class="botao" onclick="insere('1')">1</button>
+                <button class="botao" onclick="insere('2')">2</button>
+                <button class="botao" onclick="insere('3')">3</button>
+                <button class="botao" onclick="insere('+')">&plus;</button>
             </div>
         
             <div class="calculadora-botao">
-                <button class="botao">4</button>
-                <button class="botao">5</button>
-                <button class="botao">6</button>
-                <button class="botao">&minus;</button>
+                <button class="botao" onclick="insere('4')">4</button>
+                <button class="botao" onclick="insere('5')">5</button>
+                <button class="botao" onclick="insere('6')">6</button>
+                <button class="botao" onclick="insere('-')">&minus;</button>
             </div>
 
             <div class="calculadora-botao">
-                <button class="botao">4</button>
-                <button class="botao">5</button>
-                <button class="botao">6</button>
-                <button class="botao">&divide;</button>
+                <button class="botao" onclick="insere('7')">7</button>
+                <button class="botao" onclick="insere('8')">8</button>
+                <button class="botao" onclick="insere('9')">9</button>
+                <button class="botao" onclick="insere('/')">&divide;</button>
             </div>
 
             <div class="calculadora-botao">
-                <button class="botao">7</button>
-                <button class="botao">8</button>
-                <button class="botao">9</button>
-                <button class="botao">&times;</button>
-            </div>
-
-            <div class="calculadora-botao">
-                <button class="botao">0</button>
-                <button class="botao">.</button>
-                <button class="botao">C</button>
-                <button class="botao">&equals;</button>
+                <button class="botao" onclick="insere('0')">0</button>
+                <button class="botao" data-limpar>C</button>
+                <button class="botao" data-conta onclick="calcular()">=</button>
+                <button class="botao" onclick="insere('*')">&times;</button>
             </div>
         </div>
     </div>
